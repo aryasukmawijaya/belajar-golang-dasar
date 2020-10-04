@@ -3,7 +3,13 @@ package helper
 import "fmt"
 
 var version string = "1.0"
-var Application string = "Golang"
+var Application string
+
+// method init() pada sebuah package akan selalu dieksekusi
+func init() {
+	Application = "Golang"
+	fmt.Println("Init function dipanggil")
+}
 
 // access modifier
 // jika diawali huruf besar, maka bisa diakses oleh file lain
