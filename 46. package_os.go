@@ -8,5 +8,5 @@ import (
 func main() {
 	args := os.Args
 
-	fmt.Println(args[1])
+	fmt.Println(args)
 }
